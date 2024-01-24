@@ -39,7 +39,7 @@ function Hero() {
             </div>
             <div className="holder">
               <div className="icon">
-                <i class="fa-solid fa-headset"></i>
+                <i className="fa-solid fa-headset"></i>
               </div>
               <h3>Online Support 24/7</h3>
               <p>Excepteur sint occaecat cupidatat</p>
