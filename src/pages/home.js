@@ -1,4 +1,9 @@
+import Hero from "../components/home/hero";
 function AppHome() {
-  return <div>Home</div>;
+  return (
+    <div className="container">
+      <Hero />
+    </div>
+  );
 }
 export default AppHome;
