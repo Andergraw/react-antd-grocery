@@ -1,42 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Layout, theme } from "antd";
-import {
-  LaptopOutlined,
-  NotificationOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { Layout } from "antd";
 
 import AppHeader from "./components/common/header";
 import AppHome from "./pages/home";
 import AppAbout from "./pages/about";
 import AppFaq from "./pages/faq";
+import FooterWidget from "./components/common/footerWidget";
+import FooterCopyright from "./components/common/footerCopyright";
 
 import "./App.css";
 
 const { Header, Content, Footer } = Layout;
-const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-  (icon, index) => {
-    const key = String(index + 1);
-    return {
-      key: `sub${key}`,
-      icon: React.createElement(icon),
-      label: `subnav ${key}`,
-      children: new Array(4).fill(null).map((_, j) => {
-        const subKey = index * 4 + j + 1;
-        return {
-          key: subKey,
-          label: `option${subKey}`,
-        };
-      }),
-    };
-  }
-);
 const App = () => {
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
   return (
     <div className="App">
       <Layout>
@@ -61,11 +38,12 @@ const App = () => {
           </Content>
         </Router>
         <Footer
-          style={{
-            textAlign: "center",
-          }}
+        //   style={{
+        //     textAlign: "center",
+        //   }}
         >
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
+          <FooterWidget />
+          <FooterCopyright />
         </Footer>
       </Layout>
     </div>

@@ -32,7 +32,7 @@ function Hero() {
             </div>
             <div className="holder">
               <div className="icon">
-                <i class="fa-solid fa-sack-dollar"></i>
+                <i nameclass="fa-solid fa-sack-dollar"></i>
               </div>
               <h3>Money Back Guarantee</h3>
               <p>100% money back guarantee</p>

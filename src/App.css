@@ -346,7 +346,7 @@
   }
   
   .footerWidget h3,
-  .footerWidget .ant-list-item-meta-title a {
+  .footerWidget .ant-list-item-meta .ant-list-item-meta-content .ant-list-item-meta-title a {
     color: #d7d7d7;
   }
   
@@ -355,7 +355,7 @@
     margin: 0 0 25px;
   }
   
-  .footerWidget .ant-list-item-meta-description {
+  .footerWidget .ant-list-item-meta .ant-list-item-meta-content .ant-list-item-meta-description {
     color: #f14705;
   }
   
