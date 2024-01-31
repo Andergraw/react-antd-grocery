@@ -1,6 +1,7 @@
 {
   "name": "grocery",
   "version": "0.1.0",
+  "homepage": "http://www.moobeat.com/test/grocery",
   "private": true,
   "dependencies": {
     "@p5-wrapper/react": "^4.3.2",
